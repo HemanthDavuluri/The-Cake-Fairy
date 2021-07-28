@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #373b3e;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header img {
+  width: 350px;
+  height: 200px;
+}
+
+.header-options {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-options h2 {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(60px, 1vw, 130px);
+  min-width: fit-content;
+  height: clamp(30px, 1vw, 35px);
+  color: white;
+  background-color: #fa88a5;
+  border: solid 1px white;
+  border-radius: 7px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 40px);
+}
+
+.header-options h2:hover {
+  cursor: pointer;
+}
+
+.menu-drop-down {
+  margin-top: 5px;
+  background-color: white;
+  position: absolute;
+  right: 20;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.menu-drop-down a {
+  padding: 5px;
+  margin: 5px;
+}
+
+.menu-drop-down a:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 940px) {
+  .header-options {
+    width: 95%;
+  }
+}

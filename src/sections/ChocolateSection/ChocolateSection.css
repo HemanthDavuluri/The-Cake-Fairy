@@ -1,0 +1,78 @@
+.chocolate-section {
+  width: 100%;
+  height: 100%;
+  background-color: #3f000f;
+  display: flex;
+  flex-direction: column;
+}
+
+.chocolate-section h1 {
+  color: white;
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.chocolate-section-cakes {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cake {
+  flex-shrink: 4;
+  width: 40%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.cake img {
+  width: clamp(170px, 1vw, 250px);
+  height: 150px;
+  object-fit: fill;
+  border-radius: 5%;
+}
+
+.cake-info {
+  margin-left: 5px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cake-info h2,
+.cake-info h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+.cake-info h3 {
+  font-weight: 400;
+  font-size: clamp(13px, 1.5vw, 20px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .chocolate-section-cakes {
+    justify-content: center;
+  }
+
+  .cake {
+    width: 350px;
+  justify-content: space-between;
+
+  }
+}

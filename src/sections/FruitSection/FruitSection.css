@@ -1,0 +1,34 @@
+.fruit-section {
+  width: 100%;
+  height: 100%;
+  background-color: #e9df2e;
+  display: flex;
+  flex-direction: column;
+}
+
+.fruit-section h1 {
+  color: black;
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.fruit-section h2,
+.fruit-section h3 {
+  color: black;
+}
+
+.fruit-section h2,
+.fruit-section h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+.fruit-section h3 {
+  font-weight: 400;
+  font-size: clamp(13px, 1.5vw, 20px);
+}
